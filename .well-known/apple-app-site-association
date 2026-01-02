@@ -1,0 +1,36 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAMID.com.javieritrbe.ExpenseTracker",
+        "paths": ["/oauth.html"]
+      }
+    ]
+  }
+}
+```
+
+Replace `TEAMID` with your Apple Team ID (found in Xcode under Signing & Capabilities, or at developer.apple.com).
+
+---
+
+## Step 2: Enable GitHub Pages
+
+1. In your `plaid-oauth-redirect` repo, go to **Settings** → **Pages**
+2. Set source to **main** branch
+3. Save
+
+Your redirect URI will be:
+```
+https://javieritrbe.github.io/plaid-oauth-redirect/oauth.html
+```
+
+---
+
+## Step 3: Add to Plaid Dashboard
+
+1. Go to [dashboard.plaid.com](https://dashboard.plaid.com) → **Team Settings** → **API**
+2. Add your redirect URI:
+```
+   https://javieritrbe.github.io/plaid-oauth-redirect/oauth.html
