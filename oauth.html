@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Redirecting...</title>
+    <title>Authorization Complete</title>
     <style>
         body {
             font-family: -apple-system, sans-serif;
@@ -14,36 +14,26 @@
             margin: 0;
             background: #f5f5f5;
             text-align: center;
+            color: #333;
         }
         .container {
-            padding: 20px;
+            padding: 24px;
         }
-        a {
-            display: inline-block;
-            margin-top: 16px;
-            padding: 12px 24px;
-            background: #007AFF;
-            color: white;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 17px;
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <p>Redirecting back to app...</p>
-        <a id="openApp" href="">Open Expense Tracker</a>
+        <h2>Authorization Complete</h2>
+        <p>You can now return to Expense Tracker.</p>
     </div>
-    <script>
-        // Preserve the full URL with Plaid's OAuth query parameters
-        var currentUrl = window.location.href;
-
-        // Set the fallback link
-        document.getElementById('openApp').href = currentUrl;
-
-        // Try to redirect automatically via Universal Link
-        window.location.href = currentUrl;
-    </script>
 </body>
 </html>
